@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# 🎉 Birthday Info App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and fun web app built using **React.js** that helps users explore interesting facts about their **birthday** – including current age, age in any specific year, and the years their birthday will fall on the **same weekday**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧠 Features
 
-### `npm start`
+- 🎂 **Present Age** – Know how old you are right now
+- 📅 **Age in a Specific Year** – Know your age in any year you choose
+- 🔁 **Same Weekday Birthdays** – Find out in which years your birthday falls on the same day
+- 💬 **Comment Box** – Drop feedback or thoughts for a better experience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tech Stack
 
-### `npm test`
+| Technology     | Use Case                     |
+|----------------|------------------------------|
+| React.js       | Frontend Framework           |
+| Tailwind CSS   | Responsive UI Styling        |
+| JavaScript     | Application Logic            |
+| React Router   | Page Routing and Navigation  |
+| HTML/CSS       | Structure and Styling        |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔗 Prerequisites
+- Node.js and npm should be installed  
+  → [Download Node.js](https://nodejs.org)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📦 Run Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone the repository
+git clone https://github.com/Pragat2021/Birthday-app.git
 
-### `npm run eject`
+# Go into the project directory
+cd Birthday-app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Install dependencies
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start the app
+npm start
