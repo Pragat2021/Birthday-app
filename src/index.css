@@ -1,0 +1,227 @@
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #FFB6C1, #8A2BE2, #6A5ACD);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #4B0082;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.6);
+  margin-bottom: 2rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* --- Button Styles --- */
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+button.bg-purple-600 {
+  background-color: #6A5ACD;
+  color: #fff;
+}
+
+button.bg-purple-600:hover {
+  background-color: #5C4F96;
+}
+
+button.bg-green-600 {
+  background-color: #32CD32;
+  color: #fff;
+}
+
+button.bg-green-600:hover {
+  background-color: #2E8B57;
+}
+
+button.bg-yellow-600 {
+  background-color: #FFD700;
+  color: #fff;
+}
+
+button.bg-yellow-600:hover {
+  background-color: #FFC107;
+}
+
+button.bg-pink-600 {
+  background-color: #FF69B4;
+  color: #fff;
+}
+
+button.bg-pink-600:hover {
+  background-color: #FF1493;
+}
+
+/* --- Form Styles --- */
+input[type="date"],
+input[type="number"],
+textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border: 2px solid #6A5ACD;
+}
+
+/* --- Card & Container Styles --- */
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-white.rounded-xl {
+  border-radius: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gray-700 {
+  color: #4A4A4A;
+}
+
+.text-blue-700 {
+  color: #1E3A8A;
+}
+
+.text-green-700 {
+  color: #2F855A;
+}
+
+.text-purple-700 {
+  color: #6A5ACD;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Grid & Layout Styles --- */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.md\\:grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* --- Custom Tooltip (Hover effect for button) --- */
+button:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  opacity: 0;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+button:hover:before {
+  opacity: 1;
+  bottom: 110%;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6A5ACD;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5C4F96;
+}
+
